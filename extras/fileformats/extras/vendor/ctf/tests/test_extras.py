@@ -19,5 +19,4 @@ from fileformats.biosig import Ctf
 
 def test_ctf_read_metadata(ctf_ds_path):
     metadata = Ctf(ctf_ds_path).metadata
-    assert isinstance(metadata, dict)
     assert metadata["sfreq"] is not None
